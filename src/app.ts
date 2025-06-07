@@ -21,7 +21,7 @@ const queue = new Queue(async (task: EmailTask) => {
 });
 
 // Endpoint to queue an email for sending
-app.post('/send-email/*', async (req, res) => {
+app.post('/send-email', async (req, res) => {
   const { to, subject, body, idempotencyKey } = req.body;
 
   if (!to || !subject || !body || !idempotencyKey) {
@@ -38,7 +38,7 @@ app.post('/send-email/*', async (req, res) => {
 
 
 // Endpoint to check email status
-app.get('/status/:id/*', (req, res) => {
+app.get('/status/:id', (req, res) => {
   const status = emailService.getStatus(req.params.id);
   if (status) {
     res.json(status);
