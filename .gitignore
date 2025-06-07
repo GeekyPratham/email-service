@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Output folders
+dist/
+build/
+out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage reports
+coverage/
+
+# Environment variables (do NOT commit secrets)
+.env
+.env.*  # e.g., .env.production, .env.local
+
+# Editor/IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Postman or API testing collections (optional)
+*.postman_collection.json
+*.postman_environment.json
+
+# Prisma (if you're using it — optional)
+prisma/migrations/
+
+# Wrangler (for Cloudflare Workers — optional)
+wrangler.toml
+wrangler.json
+wrangler.jsonc
