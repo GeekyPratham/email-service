@@ -46,7 +46,7 @@ curl http://localhost:5000/status/unique-id-1
 
 **Assumptions**
 
-- Mock providers simulate email sending with random failures (70% success for A, 50% for B).
+- Mock providers simulate email sending with random failures (70% success for A, 90% for B).
 - Rate limit: 10 emails per minute.
 - Retry: 3 attempts with exponential backoff (1s, 2s, 4s).
 - In-memory storage for idempotency and status tracking.
